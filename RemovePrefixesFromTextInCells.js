@@ -1,4 +1,4 @@
-function cleanTextInColumn(sheetName, dataRangeNotation, settingsSheetName, wordsRangeNotation) {
+function removePrefixesFromTextInCells(sheetName, dataRangeNotation, settingsSheetName, wordsRangeNotation) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   
   var sheet = ss.getSheetByName(sheetName);
