@@ -1,3 +1,16 @@
+// Инициирует цепочку выполнения
+function triggerFunction(){
+removePrefixesFromTextInCells("Main","B2:B","Main","D2:D");
+}
+
+/**
+ * Функция для переноса данных из одного столбца на другой лист и в другой столбец * 
+ * @param {string} sheetName (название листа с данными)
+ * @param {string} dataRangeNotation (обозначение диапазона данных)
+ * 
+ * @param {string} settingsSheetName (название листа с настройками)
+ * @param {string} wordsRangeNotation (обозначение диапазона минус слов в листе настроек) 
+ */
 function removePrefixesFromTextInCells(sheetName, dataRangeNotation, settingsSheetName, wordsRangeNotation) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   
